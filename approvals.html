@@ -7,7 +7,7 @@
   <meta name="description" content="ISO 9001, ISO 14001, ISO 45001, ADDC Electrical Contractor, ADDC HV/LV Maintenance, ADM Approved, TAQA Qualified, SEC Vendor VD042735." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Slab:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Slab:wght@400;600;700;900&family=Cairo:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -29,9 +29,12 @@
         <span>📧 sales@gulfpower.org</span>
       </div>
       <div class="header-top-right">
-        <span>🌍 Jeddah, KSA &nbsp;|&nbsp; Abu Dhabi, UAE &nbsp;|&nbsp; Dubai, UAE</span>
-        <span style="background:rgba(26,107,138,0.4);padding:3px 10px;border-radius:10px;font-size:11px;font-weight:700;letter-spacing:1px;">ADDC APPROVED</span>
+        <span data-i18n-html="common.topbar_location">🌍 Jeddah, KSA &nbsp;|&nbsp; Abu Dhabi, UAE &nbsp;|&nbsp; Dubai, UAE</span>
+        <span data-i18n="common.topbar_badge" style="background:rgba(26,107,138,0.4);padding:3px 10px;border-radius:10px;font-size:11px;font-weight:700;letter-spacing:1px;">ADDC APPROVED</span>
       </div>
+      <div class="lang-switcher-container">
+          <button id="lang-toggle-btn" onclick="toggleLanguage()">العربية</button>
+     </div>
     </div>
   </div>
   <div class="header-main">
@@ -40,17 +43,17 @@
         <div class="logo-icon">G<i class="lightning">⚡</i></div>
         <div class="logo-text">
           <span class="name">Gulf Solution Power</span>
-          <span class="tagline">Company L.L.C — Part of Gulf Power Group</span>
+          <span class="tagline" data-i18n="common.logo_tagline">Company L.L.C — Part of Gulf Power Group</span>
         </div>
       </a>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="clients.html">Clients</a></li>
-          <li class="active"><a href="approvals.html">Approvals</a></li>
-          <li><a href="contact.html" class="btn btn-secondary">Contact Us</a></li>
+          <li><a href="index.html" data-i18n="common.nav_home">Home</a></li>
+          <li><a href="services.html" data-i18n="common.nav_services">Services</a></li>
+          <li><a href="projects.html" data-i18n="common.nav_projects">Projects</a></li>
+          <li><a href="clients.html" data-i18n="common.nav_clients">Clients</a></li>
+          <li class="active"><a href="approvals.html" data-i18n="common.nav_approvals">Approvals</a></li>
+          <li><a href="contact.html" class="btn btn-secondary" data-i18n="common.nav_contact">Contact Us</a></li>
         </ul>
       </nav>
       <button class="hamburger" aria-label="Open menu">
@@ -60,12 +63,12 @@
   </div>
   <nav class="mobile-nav">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="clients.html">Clients</a></li>
-      <li><a href="approvals.html">Approvals</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="index.html" data-i18n="common.nav_home">Home</a></li>
+      <li><a href="services.html" data-i18n="common.nav_services">Services</a></li>
+      <li><a href="projects.html" data-i18n="common.nav_projects">Projects</a></li>
+      <li><a href="clients.html" data-i18n="common.nav_clients">Clients</a></li>
+      <li><a href="approvals.html" data-i18n="common.nav_approvals">Approvals</a></li>
+      <li><a href="contact.html" data-i18n="common.nav_contact">Contact Us</a></li>
     </ul>
   </nav>
 </header>
@@ -75,18 +78,18 @@
   <div class="page-banner-bg"></div>
   <div class="container">
     <div class="page-banner-content">
-      <span class="subtitle-tag">Credentials</span>
-      <h1>Approvals &amp; Certifications</h1>
-      <p>Recognized and certified by leading authorities in UAE and KSA</p>
+      <span class="subtitle-tag" data-i18n="approvals.banner_tag">Credentials</span>
+      <h1 data-i18n-html="approvals.banner_title">Approvals &amp; Certifications</h1>
+      <p data-i18n="approvals.banner_desc">Recognized and certified by leading authorities in UAE and KSA</p>
       <div class="breadcrumb">
-        <a href="index.html">Home</a>
+        <a href="index.html" data-i18n="common.nav_home">Home</a>
         <span>›</span>
-        <span>Approvals</span>
+        <span data-i18n="common.nav_approvals">Approvals</span>
       </div>
     </div>
     <div class="page-banner-stats">
-      <div class="banner-stat"><span class="num">3</span><span class="lbl">ISO Certs</span></div>
-      <div class="banner-stat"><span class="num">ADDC</span><span class="lbl">Licensed</span></div>
+      <div class="banner-stat"><span class="num">3</span><span class="lbl" data-i18n="approvals.stat_iso">ISO Certs</span></div>
+      <div class="banner-stat"><span class="num">ADDC</span><span class="lbl" data-i18n="approvals.stat_addc">Licensed</span></div>
       <div class="banner-stat"><span class="num">SEC</span><span class="lbl">VD042735</span></div>
     </div>
   </div>
@@ -98,142 +101,142 @@
 
     <!-- ISO -->
     <div class="section-header fade-in">
-      <span class="subtitle">International Standards</span>
-      <h2>ISO Certifications</h2>
-      <p>Demonstrating our commitment to quality, environmental management, and occupational health and safety</p>
+      <span class="subtitle" data-i18n="approvals.iso_subtitle">International Standards</span>
+      <h2 data-i18n="approvals.iso_heading">ISO Certifications</h2>
+      <p data-i18n="approvals.iso_desc">Demonstrating our commitment to quality, environmental management, and occupational health and safety</p>
     </div>
     <div class="approvals-grid fade-in" style="grid-template-columns:repeat(3,1fr);margin-bottom:60px;">
       <div class="approval-card approval-card-lg">
         <div class="approval-icon">🏅</div>
-        <h4>ISO 9001:2015</h4>
-        <p style="margin-bottom:14px;">Quality Management Systems</p>
+        <h4 data-i18n="approvals.iso1_title">ISO 9001:2015</h4>
+        <p style="margin-bottom:14px;" data-i18n="approvals.iso1_desc">Quality Management Systems</p>
         <ul class="approval-list">
-          <li>Mechanical Contracting</li>
-          <li>Power Distribution Networks &amp; Stations</li>
-          <li>Electrical Contracting</li>
-          <li>Installation of Electrical Wiring &amp; Fittings</li>
-          <li>Electrical Fittings &amp; Fixtures Services</li>
-          <li>Onshore &amp; Offshore Oil &amp; Gas Field Services</li>
+          <li data-i18n="approvals.iso1_li1">Mechanical Contracting</li>
+          <li data-i18n-html="approvals.iso1_li2">Power Distribution Networks &amp; Stations</li>
+          <li data-i18n="approvals.iso1_li3">Electrical Contracting</li>
+          <li data-i18n-html="approvals.iso1_li4">Installation of Electrical Wiring &amp; Fittings</li>
+          <li data-i18n-html="approvals.iso1_li5">Electrical Fittings &amp; Fixtures Services</li>
+          <li data-i18n-html="approvals.iso1_li6">Onshore &amp; Offshore Oil &amp; Gas Field Services</li>
         </ul>
-        <div class="approval-meta">Certificate No. AAU-1611 &nbsp;|&nbsp; Valid up to: 07 JUN 2026</div>
+        <div class="approval-meta" data-i18n-html="approvals.iso1_meta">Certificate No. AAU-1611 &nbsp;|&nbsp; Valid up to: 07 JUN 2026</div>
       </div>
       <div class="approval-card approval-card-lg">
         <div class="approval-icon">🌿</div>
-        <h4>ISO 14001:2015</h4>
-        <p style="margin-bottom:14px;">Environmental Management Systems</p>
+        <h4 data-i18n="approvals.iso2_title">ISO 14001:2015</h4>
+        <p style="margin-bottom:14px;" data-i18n="approvals.iso2_desc">Environmental Management Systems</p>
         <ul class="approval-list">
-          <li>Power Distribution Networks &amp; Stations</li>
-          <li>Electrical Contracting</li>
-          <li>Installation of Electrical Wiring &amp; Fittings</li>
-          <li>Mechanical Contracting</li>
-          <li>Onshore &amp; Offshore Oil &amp; Gas Field Services</li>
+          <li data-i18n-html="approvals.iso2_li1">Power Distribution Networks &amp; Stations</li>
+          <li data-i18n="approvals.iso2_li2">Electrical Contracting</li>
+          <li data-i18n-html="approvals.iso2_li3">Installation of Electrical Wiring &amp; Fittings</li>
+          <li data-i18n="approvals.iso2_li4">Mechanical Contracting</li>
+          <li data-i18n-html="approvals.iso2_li5">Onshore &amp; Offshore Oil &amp; Gas Field Services</li>
         </ul>
-        <div class="approval-meta">Certificate No. AAU-5840 &nbsp;|&nbsp; Valid up to: 14 APR 2026</div>
+        <div class="approval-meta" data-i18n-html="approvals.iso2_meta">Certificate No. AAU-5840 &nbsp;|&nbsp; Valid up to: 14 APR 2026</div>
       </div>
       <div class="approval-card approval-card-lg">
         <div class="approval-icon">⛑️</div>
-        <h4>ISO 45001:2018</h4>
-        <p style="margin-bottom:14px;">Occupational Health &amp; Safety Management Systems</p>
+        <h4 data-i18n="approvals.iso3_title">ISO 45001:2018</h4>
+        <p style="margin-bottom:14px;" data-i18n-html="approvals.iso3_desc">Occupational Health &amp; Safety Management Systems</p>
         <ul class="approval-list">
-          <li>Mechanical Contracting</li>
-          <li>Power Distribution Networks &amp; Stations</li>
-          <li>Electrical Contracting</li>
-          <li>Electrical Fittings &amp; Fixtures Services</li>
-          <li>Onshore &amp; Offshore Oil &amp; Gas Field Services</li>
+          <li data-i18n="approvals.iso3_li1">Mechanical Contracting</li>
+          <li data-i18n-html="approvals.iso3_li2">Power Distribution Networks &amp; Stations</li>
+          <li data-i18n="approvals.iso3_li3">Electrical Contracting</li>
+          <li data-i18n-html="approvals.iso3_li4">Electrical Fittings &amp; Fixtures Services</li>
+          <li data-i18n-html="approvals.iso3_li5">Onshore &amp; Offshore Oil &amp; Gas Field Services</li>
         </ul>
-        <div class="approval-meta">Certificate No. AAU-3938 &nbsp;|&nbsp; Valid up to: 14 APR 2026</div>
+        <div class="approval-meta" data-i18n-html="approvals.iso3_meta">Certificate No. AAU-3938 &nbsp;|&nbsp; Valid up to: 14 APR 2026</div>
       </div>
     </div>
 
     <!-- UAE Approvals -->
     <div class="section-header fade-in">
-      <span class="subtitle">UAE Authority Approvals</span>
-      <h2>UAE Certifications</h2>
+      <span class="subtitle" data-i18n="approvals.uae_subtitle">UAE Authority Approvals</span>
+      <h2 data-i18n="approvals.uae_heading">UAE Certifications</h2>
     </div>
     <div class="approvals-grid fade-in" style="margin-bottom:60px;">
       <div class="approval-card">
         <div class="approval-icon">⚡</div>
-        <h4>ADDC Electrical Contractor</h4>
-        <p>Licensed by the Abu Dhabi Distribution Company to undertake MEP contracting projects including Electrical, HVAC, Plumbing, ELV within the country</p>
+        <h4 data-i18n="approvals.u1_title">ADDC Electrical Contractor</h4>
+        <p data-i18n="approvals.u1_desc">Licensed by the Abu Dhabi Distribution Company to undertake MEP contracting projects including Electrical, HVAC, Plumbing, ELV within the country</p>
       </div>
       <div class="approval-card">
         <div class="approval-icon">🔌</div>
-        <h4>ADDC HV/LV Maintenance</h4>
-        <p>Qualified by Abu Dhabi Distribution Company for operation and maintenance of HV/LV substations up to 33kV. Registration No. <strong style="color:var(--color-primary);">9962793</strong></p>
+        <h4 data-i18n="approvals.u2_title">ADDC HV/LV Maintenance</h4>
+        <p data-i18n-html="approvals.u2_desc">Qualified by Abu Dhabi Distribution Company for operation and maintenance of HV/LV substations up to 33kV. Registration No. <strong style="color:var(--color-primary);">9962793</strong></p>
       </div>
       <div class="approval-card">
         <div class="approval-icon">🏛️</div>
-        <h4>ADM Approved Contractor</h4>
-        <p>Abu Dhabi Municipalities approved contractor with a wide range of projects completed under ADM authority</p>
+        <h4 data-i18n="approvals.u3_title">ADM Approved Contractor</h4>
+        <p data-i18n="approvals.u3_desc">Abu Dhabi Municipalities approved contractor with a wide range of projects completed under ADM authority</p>
       </div>
       <div class="approval-card">
         <div class="approval-icon">⚡</div>
-        <h4>TAQA Distribution — Electrical Contracting</h4>
-        <p>Licensed for electrical contracting works under Category Second. License valid up to <strong style="color:var(--color-primary);">14 November 2026</strong>. Company ID: <strong style="color:var(--color-primary);">9962793</strong></p>
+        <h4 data-i18n="approvals.u4_title">TAQA Distribution — Electrical Contracting</h4>
+        <p data-i18n-html="approvals.u4_desc">Licensed for electrical contracting works under Category Second. License valid up to <strong style="color:var(--color-primary);">14 November 2026</strong>. Company ID: <strong style="color:var(--color-primary);">9962793</strong></p>
       </div>
       <div class="approval-card">
         <div class="approval-icon">🔧</div>
-        <h4>TAQA — Power Distribution Testing</h4>
-        <p>Work Group 3120400: Power Distribution Testing &amp; Commissioning Services. Status: <strong style="color:#059669;">QUALIFIED</strong>. Validation Date: 09-Oct-30</p>
+        <h4 data-i18n="approvals.u5_title">TAQA — Power Distribution Testing</h4>
+        <p data-i18n-html="approvals.u5_desc">Work Group 3120400: Power Distribution Testing &amp; Commissioning Services. Status: <strong style="color:#059669;">QUALIFIED</strong>. Validation Date: 09-Oct-30</p>
       </div>
       <div class="approval-card">
         <div class="approval-icon">🏗️</div>
-        <h4>TAQA — Substation Maintenance</h4>
-        <p>Work Group 3120100: Power Distribution — Substation Maintenance Services. Status: <strong style="color:#059669;">QUALIFIED</strong>. Validation Date: 08-Mar-29</p>
+        <h4 data-i18n="approvals.u6_title">TAQA — Substation Maintenance</h4>
+        <p data-i18n-html="approvals.u6_desc">Work Group 3120100: Power Distribution — Substation Maintenance Services. Status: <strong style="color:#059669;">QUALIFIED</strong>. Validation Date: 08-Mar-29</p>
       </div>
       <div class="approval-card">
         <div class="approval-icon">🏢</div>
-        <h4>ADNOC Supplier</h4>
-        <p>Pre-qualified supplier for electrical works — Domestic. Work Group 260025. Supplier ID: <strong style="color:var(--color-primary);">10075790</strong>. Status: Pre-qualified</p>
+        <h4 data-i18n="approvals.u7_title">ADNOC Supplier</h4>
+        <p data-i18n-html="approvals.u7_desc">Pre-qualified supplier for electrical works — Domestic. Work Group 260025. Supplier ID: <strong style="color:var(--color-primary);">10075790</strong>. Status: Pre-qualified</p>
       </div>
       <div class="approval-card">
         <div class="approval-icon">🇦🇪</div>
-        <h4>Gulf Power UAE Registration</h4>
-        <p>Gulf Power Electromechanical Contracting LLC — Flat 404, Al Mansour Tower, SNB Bank Building, P.O. Box 112982, Abu Dhabi, UAE</p>
+        <h4 data-i18n="approvals.u8_title">Gulf Power UAE Registration</h4>
+        <p data-i18n="approvals.u8_desc">Gulf Power Electromechanical Contracting LLC — Flat 404, Al Mansour Tower, SNB Bank Building, P.O. Box 112982, Abu Dhabi, UAE</p>
       </div>
     </div>
 
     <!-- KSA Approvals -->
     <div class="section-header fade-in">
-      <span class="subtitle">Kingdom of Saudi Arabia</span>
-      <h2>KSA Registrations</h2>
+      <span class="subtitle" data-i18n="approvals.ksa_subtitle">Kingdom of Saudi Arabia</span>
+      <h2 data-i18n="approvals.ksa_heading">KSA Registrations</h2>
     </div>
     <div class="approvals-grid fade-in" style="grid-template-columns:repeat(3,1fr);margin-bottom:60px;">
       <div class="approval-card approval-card-lg">
         <div class="approval-icon">🇸🇦</div>
-        <h4>Commercial Registration Certificate</h4>
-        <p style="margin-bottom:12px;">Ministry of Commerce — Kingdom of Saudi Arabia</p>
+        <h4 data-i18n="approvals.k1_title">Commercial Registration Certificate</h4>
+        <p style="margin-bottom:12px;" data-i18n="approvals.k1_desc">Ministry of Commerce — Kingdom of Saudi Arabia</p>
         <ul class="approval-list">
-          <li>Company: Gulf Solution Power Company</li>
-          <li>Unified National Number: <strong style="color:var(--color-primary);">7051445786</strong></li>
-          <li>Date of Issue: 02/09/2025</li>
-          <li>Entity Type: Limited Liability Company</li>
-          <li>Register Status: <strong style="color:#059669;">Active</strong></li>
+          <li data-i18n="approvals.k1_li1">Company: Gulf Solution Power Company</li>
+          <li data-i18n-html="approvals.k1_li2">Unified National Number: <strong style="color:var(--color-primary);">7051445786</strong></li>
+          <li data-i18n="approvals.k1_li3">Date of Issue: 02/09/2025</li>
+          <li data-i18n="approvals.k1_li4">Entity Type: Limited Liability Company</li>
+          <li data-i18n-html="approvals.k1_li5">Register Status: <strong style="color:#059669;">Active</strong></li>
         </ul>
       </div>
       <div class="approval-card approval-card-lg">
         <div class="approval-icon">🕌</div>
-        <h4>Zakat Registration Certificate</h4>
-        <p style="margin-bottom:12px;">Zakat, Tax and Customs Authority — Kingdom of Saudi Arabia</p>
+        <h4 data-i18n="approvals.k2_title">Zakat Registration Certificate</h4>
+        <p style="margin-bottom:12px;" data-i18n="approvals.k2_desc">Zakat, Tax and Customs Authority — Kingdom of Saudi Arabia</p>
         <ul class="approval-list">
-          <li>Company: Gulf Solution Power Company</li>
-          <li>TIN: 3141065593</li>
-          <li>Certificate No.: 100251144726040</li>
-          <li>Registered: 10/03/1447 AH (02/09/2025 AD)</li>
-          <li>Status: <strong style="color:#059669;">Active</strong></li>
+          <li data-i18n="approvals.k2_li1">Company: Gulf Solution Power Company</li>
+          <li data-i18n="approvals.k2_li2">TIN: 3141065593</li>
+          <li data-i18n="approvals.k2_li3">Certificate No.: 100251144726040</li>
+          <li data-i18n="approvals.k2_li4">Registered: 10/03/1447 AH (02/09/2025 AD)</li>
+          <li data-i18n-html="approvals.k2_li5">Status: <strong style="color:#059669;">Active</strong></li>
         </ul>
       </div>
       <div class="approval-card approval-card-lg">
         <div class="approval-icon">🏢</div>
-        <h4>Jeddah Chamber Membership</h4>
-        <p style="margin-bottom:12px;">Member of the Jeddah Chamber of Commerce</p>
+        <h4 data-i18n="approvals.k3_title">Jeddah Chamber Membership</h4>
+        <p style="margin-bottom:12px;" data-i18n="approvals.k3_desc">Member of the Jeddah Chamber of Commerce</p>
         <ul class="approval-list">
-          <li>Membership No.: <strong style="color:var(--color-primary);">637747</strong></li>
-          <li>NUN: 7051445786</li>
-          <li>Date of Membership: 02/09/2025</li>
-          <li>Date of Expiry: 01/09/2026</li>
-          <li>P.O. Box: 6218</li>
-          <li>Status: <strong style="color:#059669;">Active (فعال)</strong></li>
+          <li data-i18n-html="approvals.k3_li1">Membership No.: <strong style="color:var(--color-primary);">637747</strong></li>
+          <li data-i18n="approvals.k3_li2">NUN: 7051445786</li>
+          <li data-i18n="approvals.k3_li3">Date of Membership: 02/09/2025</li>
+          <li data-i18n="approvals.k3_li4">Date of Expiry: 01/09/2026</li>
+          <li data-i18n="approvals.k3_li5">P.O. Box: 6218</li>
+          <li data-i18n-html="approvals.k3_li6">Status: <strong style="color:#059669;">Active (فعال)</strong></li>
         </ul>
       </div>
     </div>
@@ -242,8 +245,8 @@
     <div class="sec-vendor fade-in">
       <div class="sec-badge">SEC<br><span style="font-size:13px;">VD042735</span></div>
       <div>
-        <strong>Saudi Electricity Company — Vendor Code: VD042735</strong>
-        <p>
+        <strong data-i18n="approvals.sec_title">Saudi Electricity Company — Vendor Code: VD042735</strong>
+        <p data-i18n="approvals.sec_desc">
           SEC approval and vendor/registration code under process up to 132kV. This approval scope covers medium and
           high voltage electrical works in accordance with the technical and regulatory requirements of the Saudi
           Electricity Company (SEC). The company has initiated all required procedures and submitted the necessary
@@ -256,9 +259,9 @@
     <!-- CTA -->
     <div class="projects-cta fade-in" style="margin-top:48px;">
       <div class="projects-cta-inner">
-        <h3>Need a Pre-Qualified Contractor?</h3>
-        <p>We hold the approvals and certifications required to execute electrical and MEP works for your authority or project.</p>
-        <a href="contact.html" class="btn btn-primary">Contact Our Team</a>
+        <h3 data-i18n="approvals.cta_title">Need a Pre-Qualified Contractor?</h3>
+        <p data-i18n="approvals.cta_desc">We hold the approvals and certifications required to execute electrical and MEP works for your authority or project.</p>
+        <a href="contact.html" class="btn btn-primary" data-i18n="approvals.cta_btn">Contact Our Team</a>
       </div>
     </div>
 
@@ -274,62 +277,63 @@
           <div class="logo-icon">G<i class="lightning">⚡</i></div>
           <div class="logo-text">
             <span class="name">Gulf Solution Power</span>
-            <span class="tagline">Company L.L.C</span>
+            <span class="tagline" data-i18n="common.logo_tagline_short">Company L.L.C</span>
           </div>
         </a>
-        <p>ADDC Approved Contractor for Electrical, Mechanical, MEP, HV/LV O&amp;M, and Testing Works — Operating in UAE &amp; Saudi Arabia since 2013.</p>
+        <p data-i18n-html="common.footer_tagline">ADDC Approved Contractor for Electrical, Mechanical, MEP, HV/LV O&amp;M, and Testing Works — Operating in UAE &amp; Saudi Arabia since 2013.</p>
         <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;">
           <span style="background:rgba(26,107,138,0.3);border:1px solid rgba(26,107,138,0.4);color:#7dd3fc;padding:4px 10px;border-radius:12px;font-size:11px;font-weight:600;">ISO 9001</span>
           <span style="background:rgba(26,107,138,0.3);border:1px solid rgba(26,107,138,0.4);color:#7dd3fc;padding:4px 10px;border-radius:12px;font-size:11px;font-weight:600;">ISO 14001</span>
           <span style="background:rgba(26,107,138,0.3);border:1px solid rgba(26,107,138,0.4);color:#7dd3fc;padding:4px 10px;border-radius:12px;font-size:11px;font-weight:600;">ISO 45001</span>
-          <span style="background:rgba(26,107,138,0.3);border:1px solid rgba(26,107,138,0.4);color:#7dd3fc;padding:4px 10px;border-radius:12px;font-size:11px;font-weight:600;">ADDC Licensed</span>
+          <span style="background:rgba(26,107,138,0.3);border:1px solid rgba(26,107,138,0.4);color:#7dd3fc;padding:4px 10px;border-radius:12px;font-size:11px;font-weight:600;" data-i18n="home.cert_addc">ADDC Licensed</span>
         </div>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4 data-i18n="common.footer_quicklinks">Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About Us</a></li>
-          <li><a href="index.html#services">Our Services</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="clients.html">Clients</a></li>
-          <li><a href="approvals.html">Approvals</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html" data-i18n="common.nav_home">Home</a></li>
+          <li><a href="index.html#about" data-i18n="common.footer_about">About Us</a></li>
+          <li><a href="index.html#services" data-i18n="common.footer_our_services">Our Services</a></li>
+          <li><a href="services.html" data-i18n="common.nav_services">Services</a></li>
+          <li><a href="projects.html" data-i18n="common.nav_projects">Projects</a></li>
+          <li><a href="clients.html" data-i18n="common.nav_clients">Clients</a></li>
+          <li><a href="approvals.html" data-i18n="common.nav_approvals">Approvals</a></li>
+          <li><a href="contact.html" data-i18n="common.nav_contact">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Our Services</h4>
+        <h4 data-i18n="common.footer_services_heading">Our Services</h4>
         <ul>
-          <li><a href="index.html#services">HV Electrical (up to 400kV)</a></li>
-          <li><a href="index.html#services">LV Electrical &amp; Switchgear</a></li>
-          <li><a href="index.html#services">MEP Design &amp; Installation</a></li>
-          <li><a href="index.html#services">HV/LV Substation O&amp;M</a></li>
-          <li><a href="index.html#services">Testing &amp; Commissioning</a></li>
-          <li><a href="index.html#services">HVAC Systems</a></li>
-          <li><a href="index.html#services">Plumbing &amp; Fire Protection</a></li>
-          <li><a href="index.html#services">ELV / CCTV / BMS</a></li>
+          <li><a href="index.html#services" data-i18n="common.svc_hv">HV Electrical (up to 400kV)</a></li>
+          <li><a href="index.html#services" data-i18n-html="common.svc_lv">LV Electrical &amp; Switchgear</a></li>
+          <li><a href="index.html#services" data-i18n-html="common.svc_mep">MEP Design &amp; Installation</a></li>
+          <li><a href="index.html#services" data-i18n-html="common.svc_hvlv_om">HV/LV Substation O&amp;M</a></li>
+          <li><a href="index.html#services" data-i18n-html="common.svc_testing">Testing &amp; Commissioning</a></li>
+          <li><a href="index.html#services" data-i18n="common.svc_hvac">HVAC Systems</a></li>
+          <li><a href="index.html#services" data-i18n-html="common.svc_plumbing">Plumbing &amp; Fire Protection</a></li>
+          <li><a href="index.html#services" data-i18n="common.svc_elv">ELV / CCTV / BMS</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contact Info</h4>
+        <h4 data-i18n="common.footer_contact_heading">Contact Info</h4>
         <div class="footer-contact-item"><span class="icon">📞</span><div class="text"><a href="tel:+966562999975">+966 56 299 9975</a> (KSA)<br><a href="tel:+97126311722">+971 2 6311 722</a> (UAE)</div></div>
         <div class="footer-contact-item"><span class="icon">📧</span><div class="text"><a href="mailto:sales@gulfpower.org">sales@gulfpower.org</a></div></div>
         <div class="footer-contact-item"><span class="icon">📍</span><div class="text">Jeddah, KSA — P.O. Box 6218<br>Abu Dhabi, UAE — P.O. Box 112982</div></div>
         <div style="margin-top:16px;padding:12px;background:rgba(26,107,138,0.15);border:1px solid rgba(26,107,138,0.25);border-radius:8px;">
-          <div style="color:rgba(255,255,255,0.5);font-size:11px;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">SEC Vendor Code</div>
+          <div style="color:rgba(255,255,255,0.5);font-size:11px;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;" data-i18n="common.footer_sec_label">SEC Vendor Code</div>
           <div style="color:#7dd3fc;font-weight:700;font-size:16px;font-family:'Roboto Slab',serif;">VD042735</div>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Gulf Solution Power Company LLC. All rights reserved.</p>
-      <p class="group-info">Part of <strong>Gulf Power Group UAE</strong> — Est. 2013</p>
+      <p data-i18n="common.footer_copyright">&copy; 2025 Gulf Solution Power Company LLC. All rights reserved.</p>
+      <p class="group-info" data-i18n-html="common.footer_group_info">Part of <strong>Gulf Power Group UAE</strong> — Est. 2013</p>
     </div>
   </div>
 </footer>
 
 <button id="back-to-top" title="Back to top">↑</button>
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

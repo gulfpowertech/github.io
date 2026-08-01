@@ -122,17 +122,17 @@
 
       form.addEventListener('submit', function (e) {
         e.preventDefault();
+        var t = window.i18nText || function (key) { return key; };
         var btn = form.querySelector('.form-submit');
-        var original = btn.textContent;
-        btn.textContent = 'Sending...';
+        btn.textContent = t('contact.btn_sending');
         btn.disabled = true;
 
         setTimeout(function () {
-          btn.textContent = 'Message Sent!';
+          btn.textContent = t('contact.btn_sent');
           btn.style.background = '#059669';
           form.reset();
           setTimeout(function () {
-            btn.textContent = original;
+            btn.textContent = t('contact.btn_send');
             btn.disabled = false;
             btn.style.background = '';
           }, 3000);
